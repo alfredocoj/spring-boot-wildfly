@@ -13,7 +13,7 @@ public final class HolaController {
 
     @GetMapping
     public String dimeHola(){
-        var message = "Hola Amigo!";
+        String message = "Hola Amigo!";
         return message;
     }
 }
