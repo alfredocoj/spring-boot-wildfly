@@ -50,12 +50,15 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>3.7.0</version>
                 <configuration>
-                    <archive>
-                        <manifestEntries>
-                            <Dependencies>jdk.unsupported</Dependencies>
-                        </manifestEntries>
-                    </archive>
+                    <release>8</release>
+                    <verbose>true</verbose>
+                    <!--<archive>-->
+                        <!--<manifestEntries>-->
+                            <!--<Dependencies>jdk.unsupported</Dependencies>-->
+                        <!--</manifestEntries>-->
+                    <!--</archive>-->
                 </configuration>
             </plugin>
             <!-- OPTIONAL: Remove this plugin to reduce the WAR file size. It's not needed to deploy in an external application server. -->
