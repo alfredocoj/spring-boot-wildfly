@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author moises.macero
+ * @author alfredocoj
  */
 @RestController
-@RequestMapping("/hola")
+@RequestMapping("/")
 public final class HolaController {
 
     @GetMapping
     public String dimeHola(){
-        String message = "Hola Amigo!";
+        String message = "Microservice Grupo Mateus - It Happens!";
         return message;
     }
 }
